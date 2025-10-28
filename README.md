@@ -20,7 +20,7 @@
 <p align="center">
   <a href="https://github.com/lakshya-8000cr"><img src="https://komarev.com/ghpvc/?username=lakshya-8000cr&label=Profile%20Views&color=0e75b6&style=flat-square" alt="profile views"></a>
   &nbsp;&nbsp;
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?size=24&duration=3500&color=00A3FF&center=true&vCenter=true&lines=Top+30+at+Google+Hackathon;Building+AI+Products;Open+Source+Enthusiast" alt="Typing SVG"></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?size=24&duration=3500&color=00A3FF&center=true&vCenter=true&lines=Top+30+at+Google+Hackathon;Building+AI+Products;Open+Source+Enthusiast;Youtuber+,+Social+Media+Expert;" alt="Typing SVG"></a>
 </p>
 
 ---
