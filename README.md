@@ -42,7 +42,7 @@
     <td width="50%" valign="top">
       <h3>⭐ Chanakya A (NyayGPT)</h3>
       <a href="https://nyaygpt.vercel.app/" target="_blank">
-        <img src="https://via.placeholder.com/400x200.png?text=NyayGPT+Project+Screenshot" alt="Chanakya A (NyayGPT)" width="100%">
+        <!-- <img src="https://via.placeholder.com/400x200.png?text=NyayGPT+Project+Screenshot" alt="Chanakya A (NyayGPT)" width="100%"> -->
       </a>
       <p>AI-powered multilingual legal assistant (39+ languages). Top 100 Semi-Finalist at Google Hackathon 2024.</p>
       <p>
@@ -63,7 +63,7 @@
     <td width="50%" valign="top">
       <h3>🗺️ Campus Navigator</h3>
       <a href="https://www.campusnavigator.xyz/" target="_blank">
-        <img src="https://via.placeholder.com/400x200.png?text=Campus+Navigator+Screenshot" alt="Campus Navigator" width="100%">
+        <!-- <img src="https://via.placeholder.com/400x200.png?text=Campus+Navigator+Screenshot" alt="Campus Navigator" width="100%"> -->
       </a>
       <p>Full-stack "Lost & Found" platform designed for college students to find items and connect.</p>
       <p>
@@ -86,7 +86,7 @@
     <td width="50%" valign="top">
       <h3>🎓 EduSphere</h3>
       <a href="https://edu-sphere-steel.vercel.app/dashboard.html" target="_blank">
-        <img src="https://via.placeholder.com/400x200.png?text=EduSphere+Project+Screenshot" alt="EduSphere" width="100%">
+        <!-- <img src="https://via.placeholder.com/400x200.png?text=EduSphere+Project+Screenshot" alt="EduSphere" width="100%"> -->
       </a>
       <p>Real-time study platform with chatrooms and resource sharing. Won "Best First Year Innovator" at BharatTech 2.0.</p>
       <p>
@@ -107,7 +107,7 @@
     <td width="50%" valign="top">
       <h3>🚗 Poolmate</h3>
       <a href="https://poolmate.onrender.com/" target="_blank">
-        <img src="https://via.placeholder.com/400x200.png?text=Poolmate+Project+Screenshot" alt="Poolmate" width="100%">
+        <!-- <img src="https://via.placeholder.com/400x200.png?text=Poolmate+Project+Screenshot" alt="Poolmate" width="100%"> -->
       </a>
       <p>A carpooling and group study platform with a scalable backend. Ranked Top 7 at Hack N Win 2.0.</p>
       <p>
