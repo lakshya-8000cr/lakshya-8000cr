@@ -40,7 +40,7 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>⭐ Chanakya A (NyayGPT)</h3>
+      <h3>Chanakya A (NyayGPT)</h3>
       <a href="https://nyaygpt.vercel.app/" target="_blank">
         <!-- <img src="https://via.placeholder.com/400x200.png?text=NyayGPT+Project+Screenshot" alt="Chanakya A (NyayGPT)" width="100%"> -->
       </a>
@@ -61,7 +61,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🗺️ Campus Navigator</h3>
+      <h3>Campus Navigator</h3>
       <a href="https://www.campusnavigator.xyz/" target="_blank">
         <!-- <img src="https://via.placeholder.com/400x200.png?text=Campus+Navigator+Screenshot" alt="Campus Navigator" width="100%"> -->
       </a>
@@ -84,7 +84,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🎓 EduSphere</h3>
+      <h3>EduSphere</h3>
       <a href="https://edu-sphere-steel.vercel.app/dashboard.html" target="_blank">
         <!-- <img src="https://via.placeholder.com/400x200.png?text=EduSphere+Project+Screenshot" alt="EduSphere" width="100%"> -->
       </a>
@@ -105,7 +105,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🚗 Poolmate</h3>
+      <h3>Poolmate</h3>
       <a href="https://poolmate.onrender.com/" target="_blank">
         <!-- <img src="https://via.placeholder.com/400x200.png?text=Poolmate+Project+Screenshot" alt="Poolmate" width="100%"> -->
       </a>
