@@ -1,4 +1,4 @@
-<!-- Banner stays optional (you upload later) -->
+<!-- ================= BANNER (OPTIONAL – upload later) ================= -->
 <!--
 <p align="center">
   <img src="./assets/banner.gif" alt="Lakshya Chauhan - Banner" width="100%" />
@@ -8,7 +8,7 @@
 <h1 align="center">Hey 👋 I'm <span style="color:#00A3FF">Lakshya Chauhan</span></h1>
 
 <p align="center">
-  🚀 Full-Stack Developer &nbsp;•&nbsp; 🤖 AI Builder &nbsp;•&nbsp; 🏆 Hackathon Winner <br/>
+  🚀 Full-Stack Developer • 🤖 AI Builder • 🏆 Hackathon Winner <br/>
   🎓 B.E. CSE @ Chitkara University
 </p>
 
@@ -25,33 +25,55 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/lakshya-8000cr">
-    <img src="https://komarev.com/ghpvc/?username=lakshya-8000cr&label=Profile%20Views&color=0e75b6&style=flat-square">
-  </a>
+  <img src="https://komarev.com/ghpvc/?username=lakshya-8000cr&label=Profile%20Views&color=0e75b6&style=flat-square">
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00A3FF&center=true&vCenter=true&lines=Top+30+at+Google+Hackathon;Building+AI+Products;Open+Source+Contributor;Tech+Content+Creator">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00A3FF&center=true&vCenter=true&lines=Top+30+at+Google+Hackathon;Building+AI+Products;150%2B+DSA+Problems+Solved;Open+Source+Contributor">
 </p>
 
 ---
 
 ## 👨‍💻 About Me
-- I build **scalable full-stack applications** with modern tech.
-- Passionate about **AI-powered products** that solve real-world problems.
-- Strong believer in **hackathons, rapid prototyping, and execution**.
-- Love leading teams, shipping fast, and learning in public.
+- I build **scalable full-stack applications** using modern tech stacks.
+- Strong interest in **AI-powered products** and real-world problem solving.
+- Active **hackathon participant**, rapid prototyper, and team leader.
+- Believe in **strong fundamentals + execution speed**.
 
 ---
 
 ## 🧰 Tech Stack & Skills
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,mongodb,python,langchain,pinecone,firebase,html,css,js,git,github" />
 </p>
 
-- **Languages:** C++, C, SQL, JavaScript, Python  
-- **CS Fundamentals:** DSA (100+ LeetCode problems)  
-- **Soft Skills:** Leadership, Team Coordination, Product Thinking  
+- **Programming Languages:** Java, C++, C, SQL, JavaScript, Python  
+- **Backend & Databases:** Node.js, Express, MongoDB, Firebase  
+- **Frontend:** React, Next.js, HTML, CSS  
+- **AI & Tools:** LangChain, Pinecone, REST APIs  
+- **Soft Skills:** Leadership, Team Management, Product Thinking  
+
+---
+
+## 🧠 Data Structures & Algorithms (DSA)
+
+- ✅ Solved **150+ DSA questions in Java**
+- 📌 Strong command over:
+  - Arrays & Strings  
+  - Linked Lists  
+  - Stacks & Queues  
+  - Trees & Binary Search Trees  
+  - Recursion & Backtracking  
+  - Dynamic Programming  
+  - Graphs (BFS / DFS)  
+- 🎯 Focus on **optimized solutions, edge cases & clean logic**
+- 🧩 Regular practice on **LeetCode & GeeksforGeeks**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/DSA-150%2B%20Problems%20Solved-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Primary%20Language-Java-orange?style=for-the-badge&logo=java">
+</p>
 
 ---
 
@@ -62,7 +84,7 @@
 <td width="50%" valign="top">
 
 ### 🧠 Chanakya AI (NyayGPT)
-AI-powered **multilingual legal assistant** supporting 39+ languages.  
+AI-powered **multilingual legal assistant** (39+ languages).  
 🏆 **Top 30 Semi-Finalist – Google Hackathon 2024**
 
 **Tech:** React • Node.js • LangChain • Pinecone  
@@ -78,7 +100,7 @@ AI-powered **multilingual legal assistant** supporting 39+ languages.
 <td width="50%" valign="top">
 
 ### 🧭 Campus Navigator
-A **Lost & Found system** built for college campuses with real users.
+A **Lost & Found platform** designed for college campuses.
 
 **Tech:** HTML • CSS • Node.js • MongoDB  
 
@@ -112,7 +134,7 @@ Real-time **study collaboration platform** with chatrooms.
 <td width="50%" valign="top">
 
 ### 🚗 PoolMate
-Carpooling + group coordination platform with scalable backend.  
+Carpooling & coordination platform with scalable backend.  
 🏆 **Top 7 – Hack N Win 2.0**
 
 **Tech:** Node.js • MongoDB • REST APIs  
@@ -132,9 +154,9 @@ Carpooling + group coordination platform with scalable backend.
 
 ## 🏆 Achievements
 - 🥇 **Top 30** – Google Hackathon 2024 (Chanakya AI)
-- 🥇 **Best First Year Innovator** – BharatTech 2.0
-- 🥇 **Top 7** – Hack N Win 2.0
-- 🚀 Multiple inter-college hackathon wins & finals
+- 🥇 **Best First Year Innovator** – BharatTech 2.0 (EduSphere)
+- 🥇 **Top 7** – Hack N Win 2.0 (PoolMate)
+- 🚀 Multiple inter-college hackathon finalists & winners
 
 ---
 
