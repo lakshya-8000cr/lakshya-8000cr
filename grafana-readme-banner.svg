@@ -1,0 +1,263 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+    * { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+
+    .blink { animation: blink 1.4s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    .scroll-logs { animation: scrollLogs 12s linear infinite; }
+    @keyframes scrollLogs {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-144px); }
+    }
+
+    .bar1 { animation: bar1 3s ease-in-out infinite alternate; }
+    .bar2 { animation: bar2 2.5s ease-in-out infinite alternate; }
+    .bar3 { animation: bar3 4s ease-in-out infinite alternate; }
+    .bar4 { animation: bar4 3.5s ease-in-out infinite alternate; }
+    .bar5 { animation: bar5 2s ease-in-out infinite alternate; }
+    @keyframes bar1 { from{width:60px} to{width:130px} }
+    @keyframes bar2 { from{width:90px} to{width:155px} }
+    @keyframes bar3 { from{width:40px} to{width:110px} }
+    @keyframes bar4 { from{width:75px} to{width:140px} }
+    @keyframes bar5 { from{width:50px} to{width:100px} }
+
+    .spark-cpu   { animation: sparkCpu 2s linear infinite; stroke-dashoffset: 0; }
+    .spark-mem   { animation: sparkMem 2.3s linear infinite; stroke-dashoffset: 0; }
+    .spark-rps   { animation: sparkRps 1.8s linear infinite; stroke-dashoffset: 0; }
+    @keyframes sparkCpu  { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:-60} }
+    @keyframes sparkMem  { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:-60} }
+    @keyframes sparkRps  { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:-60} }
+
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;r:3} 50%{opacity:0.5;r:5} }
+
+    .count-cpu { animation: countCpu 3s ease-in-out infinite alternate; }
+    .count-mem { animation: countMem 2.5s ease-in-out infinite alternate; }
+    .count-rps { animation: countRps 1.8s ease-in-out infinite alternate; }
+    @keyframes countCpu { from{opacity:1} 50%{opacity:0.4} to{opacity:1} }
+    @keyframes countMem { from{opacity:1} 50%{opacity:0.4} to{opacity:1} }
+    @keyframes countRps { from{opacity:1} 50%{opacity:0.4} to{opacity:1} }
+
+    .gauge-fill { animation: gaugeFill 3s ease-out forwards; }
+    @keyframes gaugeFill { from{stroke-dasharray:0 200} to{stroke-dasharray:188 200} }
+
+    .fade-in-1 { animation: fadeIn 0.5s 0.2s both; }
+    .fade-in-2 { animation: fadeIn 0.5s 0.5s both; }
+    .fade-in-3 { animation: fadeIn 0.5s 0.8s both; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+
+  <clipPath id="logClip">
+    <rect x="0" y="0" width="860" height="100"/>
+  </clipPath>
+
+  <clipPath id="bar1clip"><rect x="0" y="0" width="200" height="14"/></clipPath>
+</defs>
+
+<!-- Background -->
+<rect width="900" height="480" fill="#0f1117" rx="10"/>
+
+<!-- Top bar -->
+<rect width="900" height="36" fill="#1c2333" rx="0"/>
+<rect y="26" width="900" height="10" fill="#1c2333"/>
+<rect y="36" width="900" height="1" fill="#21262d"/>
+
+<!-- Grafana logo + title -->
+<text x="16" y="23" fill="#ff9830" font-size="13" font-weight="700" letter-spacing="1">⬡ GRAFANA</text>
+<text x="108" y="23" fill="#444d56" font-size="12">/ lakshya-universe / observability</text>
+
+<!-- Live badge -->
+<rect x="768" y="8" width="52" height="18" fill="#0d2b0d" rx="4" stroke="#73bf69" stroke-width="0.8"/>
+<circle cx="778" cy="17" r="3" fill="#73bf69" class="blink"/>
+<text x="784" y="21" fill="#73bf69" font-size="9" font-weight="700">LIVE</text>
+
+<!-- Time -->
+<text x="828" y="23" fill="#444d56" font-size="10">5m range</text>
+
+<!-- Divider line -->
+<line x1="0" y1="37" x2="900" y2="37" stroke="#21262d" stroke-width="1"/>
+
+<!-- ===== ROW 1: STAT PANELS ===== -->
+
+<!-- Panel 1: CPU -->
+<rect x="12" y="46" width="168" height="90" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="22" y="62" fill="#444d56" font-size="9" letter-spacing="0.5">CPU USAGE</text>
+<text x="22" y="88" fill="#ff9830" font-size="28" font-weight="700" class="count-cpu">64%</text>
+<text x="22" y="102" fill="#444d56" font-size="9">4 vCPU · limit 80%</text>
+<!-- sparkline cpu -->
+<polyline points="22,118 32,112 42,120 52,108 62,114 72,106 82,116 92,104 102,112 112,100 122,110 132,96 142,108 152,98 162,114 172,102" fill="none" stroke="#ff9830" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="200" class="spark-cpu"/>
+<circle cx="172" cy="102" r="3" fill="#ff9830" class="pulse"/>
+
+<!-- Panel 2: Memory -->
+<rect x="188" y="46" width="168" height="90" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="198" y="62" fill="#444d56" font-size="9" letter-spacing="0.5">MEMORY</text>
+<text x="198" y="88" fill="#b877d9" font-size="28" font-weight="700" class="count-mem">71%</text>
+<text x="198" y="102" fill="#444d56" font-size="9">heap: 342 MB</text>
+<polyline points="198,118 208,110 218,116 228,104 238,118 248,108 258,112 268,100 278,114 288,106 298,116 308,102 318,110 328,104 338,112 348,98" fill="none" stroke="#b877d9" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="200" class="spark-mem"/>
+<circle cx="348" cy="98" r="3" fill="#b877d9" class="pulse"/>
+
+<!-- Panel 3: HTTP req/s -->
+<rect x="364" y="46" width="168" height="90" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="374" y="62" fill="#444d56" font-size="9" letter-spacing="0.5">HTTP REQ/S</text>
+<text x="374" y="88" fill="#5794f2" font-size="28" font-weight="700" class="count-rps">487/s</text>
+<text x="374" y="102" fill="#444d56" font-size="9">p99: 84ms</text>
+<polyline points="374,114 384,108 394,118 404,102 414,112 424,98 434,110 444,104 454,116 464,100 474,108 484,96 494,106 504,102 514,110 524,96" fill="none" stroke="#5794f2" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="200" class="spark-rps"/>
+<circle cx="524" cy="96" r="3" fill="#5794f2" class="pulse"/>
+
+<!-- Panel 4: Pods -->
+<rect x="540" y="46" width="130" height="90" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="550" y="62" fill="#444d56" font-size="9" letter-spacing="0.5">PODS RUNNING</text>
+<text x="550" y="90" fill="#73bf69" font-size="30" font-weight="700">14</text>
+<text x="550" y="104" fill="#444d56" font-size="9">3 nodes · healthy</text>
+<!-- mini pod dots -->
+<circle cx="550" cy="122" r="4" fill="#73bf69" opacity="0.9"/>
+<circle cx="562" cy="122" r="4" fill="#73bf69" opacity="0.9"/>
+<circle cx="574" cy="122" r="4" fill="#73bf69" opacity="0.9"/>
+<circle cx="586" cy="122" r="4" fill="#73bf69" opacity="0.9"/>
+<circle cx="598" cy="122" r="4" fill="#73bf69" opacity="0.9"/>
+<circle cx="610" cy="122" r="4" fill="#73bf69" opacity="0.7"/>
+<circle cx="622" cy="122" r="4" fill="#73bf69" opacity="0.7"/>
+<circle cx="634" cy="122" r="4" fill="#73bf69" opacity="0.5"/>
+
+<!-- Panel 5: Uptime gauge -->
+<rect x="678" y="46" width="212" height="90" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="688" y="62" fill="#444d56" font-size="9" letter-spacing="0.5">UPTIME · SLA</text>
+<!-- arc gauge -->
+<path d="M 720 128 A 48 48 0 0 1 848 128" fill="none" stroke="#1e2535" stroke-width="10" stroke-linecap="round"/>
+<path d="M 720 128 A 48 48 0 0 1 848 128" fill="none" stroke="#73bf69" stroke-width="10" stroke-linecap="round" stroke-dasharray="188 200" class="gauge-fill"/>
+<text x="784" y="112" fill="#73bf69" font-size="16" font-weight="700" text-anchor="middle">99.97%</text>
+<text x="784" y="126" fill="#444d56" font-size="9" text-anchor="middle">target: 99.9%</text>
+
+<!-- ===== ROW 2 LEFT: Traffic bars ===== -->
+<rect x="12" y="148" width="380" height="158" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="22" y="166" fill="#444d56" font-size="9" letter-spacing="0.5">TRAFFIC BY SERVICE  (req/min)</text>
+
+<!-- bars -->
+<!-- forge-api -->
+<text x="22" y="186" fill="#6b7280" font-size="9">forge-api</text>
+<rect x="110" y="176" height="12" rx="2" fill="#73bf6933" class="bar1"/>
+<rect x="110" y="176" height="12" rx="2" fill="#73bf69" class="bar1" style="width:130px"/>
+<text x="250" y="186" fill="#73bf69" font-size="9">1.2k</text>
+
+<!-- kaniko -->
+<text x="22" y="206" fill="#6b7280" font-size="9">kaniko-build</text>
+<rect x="110" y="196" height="12" rx="2" fill="#5794f233" class="bar2"/>
+<rect x="110" y="196" height="12" rx="2" fill="#5794f2" class="bar2" style="width:155px"/>
+<text x="275" y="206" fill="#5794f2" font-size="9">2.1k</text>
+
+<!-- nginx -->
+<text x="22" y="226" fill="#6b7280" font-size="9">nginx-ingress</text>
+<rect x="110" y="216" height="12" rx="2" fill="#ff983033" class="bar3"/>
+<rect x="110" y="216" height="12" rx="2" fill="#ff9830" class="bar3" style="width:110px"/>
+<text x="230" y="226" fill="#ff9830" font-size="9">874</text>
+
+<!-- postgres -->
+<text x="22" y="246" fill="#6b7280" font-size="9">postgres</text>
+<rect x="110" y="236" height="12" rx="2" fill="#b877d933" class="bar4"/>
+<rect x="110" y="236" height="12" rx="2" fill="#b877d9" class="bar4" style="width:140px"/>
+<text x="260" y="246" fill="#b877d9" font-size="9">1.7k</text>
+
+<!-- ghcr -->
+<text x="22" y="266" fill="#6b7280" font-size="9">ghcr-sync</text>
+<rect x="110" y="256" height="12" rx="2" fill="#fade2a33" class="bar5"/>
+<rect x="110" y="256" height="12" rx="2" fill="#fade2a" class="bar5" style="width:100px"/>
+<text x="220" y="266" fill="#fade2a" font-size="9">612</text>
+
+<!-- error rate mini -->
+<text x="22" y="296" fill="#444d56" font-size="9" letter-spacing="0.5">ERROR RATE  (5xx)</text>
+<rect x="110" y="283" width="18" height="12" rx="2" fill="#f2495c" opacity="0.2"/>
+<rect x="132" y="283" width="8"  height="12" rx="2" fill="#f2495c" opacity="0.15"/>
+<rect x="144" y="283" width="22" height="12" rx="2" fill="#f2495c" opacity="0.1"/>
+<text x="172" y="293" fill="#f2495c" font-size="9">0.04%  ✓ healthy</text>
+
+<!-- ===== ROW 2 RIGHT: Prometheus metrics chart ===== -->
+<rect x="400" y="148" width="490" height="158" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="412" y="166" fill="#444d56" font-size="9" letter-spacing="0.5">PROMETHEUS — METRICS TIMELINE  (5m)</text>
+
+<!-- legend -->
+<rect x="412" y="172" width="8" height="8" fill="#ff9830" rx="1"/>
+<text x="424" y="180" fill="#6b7280" font-size="8">cpu_usage_pct</text>
+<rect x="522" y="172" width="8" height="8" fill="#b877d9" rx="1"/>
+<text x="534" y="180" fill="#6b7280" font-size="8">mem_usage_pct</text>
+<rect x="632" y="172" width="8" height="8" fill="#5794f2" rx="1"/>
+<text x="644" y="180" fill="#6b7280" font-size="8">http_rps (norm)</text>
+
+<!-- chart grid -->
+<line x1="412" y1="188" x2="880" y2="188" stroke="#21262d" stroke-width="0.5"/>
+<line x1="412" y1="208" x2="880" y2="208" stroke="#21262d" stroke-width="0.5"/>
+<line x1="412" y1="228" x2="880" y2="228" stroke="#21262d" stroke-width="0.5"/>
+<line x1="412" y1="248" x2="880" y2="248" stroke="#21262d" stroke-width="0.5"/>
+<line x1="412" y1="268" x2="880" y2="268" stroke="#21262d" stroke-width="0.5"/>
+<text x="406" y="192" fill="#444d56" font-size="7" text-anchor="end">100</text>
+<text x="406" y="212" fill="#444d56" font-size="7" text-anchor="end">75</text>
+<text x="406" y="232" fill="#444d56" font-size="7" text-anchor="end">50</text>
+<text x="406" y="252" fill="#444d56" font-size="7" text-anchor="end">25</text>
+<text x="406" y="272" fill="#444d56" font-size="7" text-anchor="end">0</text>
+
+<!-- CPU line -->
+<polyline points="412,232 451,224 490,236 529,216 568,228 607,210 646,222 685,204 724,218 763,200 802,214 841,196 880,208"
+  fill="none" stroke="#ff9830" stroke-width="1.8" stroke-linejoin="round" opacity="0.9"/>
+
+<!-- MEM line -->
+<polyline points="412,218 451,212 490,220 529,208 568,218 607,206 646,214 685,202 724,212 763,200 802,210 841,198 880,206"
+  fill="none" stroke="#b877d9" stroke-width="1.8" stroke-linejoin="round" opacity="0.9"/>
+
+<!-- RPS line -->
+<polyline points="412,250 451,238 490,252 529,232 568,246 607,228 646,242 685,222 724,238 763,218 802,234 841,216 880,230"
+  fill="none" stroke="#5794f2" stroke-width="1.8" stroke-linejoin="round" opacity="0.9"/>
+
+<!-- animated scanline -->
+<rect x="412" y="186" width="2" height="84" fill="#ffffff" opacity="0.06">
+  <animateTransform attributeName="transform" type="translate" from="0,0" to="468,0" dur="4s" repeatCount="indefinite"/>
+</rect>
+
+<!-- x-axis labels -->
+<text x="412" y="285" fill="#444d56" font-size="7">-5m</text>
+<text x="490" y="285" fill="#444d56" font-size="7">-4m</text>
+<text x="568" y="285" fill="#444d56" font-size="7">-3m</text>
+<text x="646" y="285" fill="#444d56" font-size="7">-2m</text>
+<text x="724" y="285" fill="#444d56" font-size="7">-1m</text>
+<text x="802" y="285" fill="#444d56" font-size="7">now</text>
+
+<!-- ===== ROW 3: LOKI LOG STREAM ===== -->
+<rect x="12" y="318" width="878" height="130" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
+<text x="22" y="336" fill="#444d56" font-size="9" letter-spacing="0.5">LOKI — LIVE LOG STREAM</text>
+<circle cx="122" cy="330" r="4" fill="#73bf69" class="blink"/>
+
+<!-- clipped scroll area -->
+<g clip-path="url(#logClip)" transform="translate(12,340)">
+  <g class="scroll-logs">
+    <!-- 12 log lines × 24px = 288px, animates -144px so loops halfway -->
+    <text x="10" y="14"  fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:01</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">forge-api      </tspan><tspan fill="#d1d5db">reconcile loop complete · all resources stable</tspan></text>
+    <text x="10" y="38"  fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:03</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">kaniko         </tspan><tspan fill="#d1d5db">image build started · ref=sha:a1b2c3d4</tspan></text>
+    <text x="10" y="62"  fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:05</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">nginx-ingress  </tspan><tspan fill="#d1d5db">upstream latency spike · 420ms p99</tspan></text>
+    <text x="10" y="86"  fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:08</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">kube-api       </tspan><tspan fill="#d1d5db">pod lakshya-worker-7d9f scaled up · node=worker-2</tspan></text>
+    <text x="10" y="110" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:11</tspan>  <tspan fill="#b877d9">[DEBUG]</tspan>  <tspan fill="#5794f2">promtail       </tspan><tspan fill="#d1d5db">scraping /metrics · 47 series collected</tspan></text>
+    <text x="10" y="134" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:13</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">forge-api      </tspan><tspan fill="#d1d5db">deploy accepted · namespace=production env=prod</tspan></text>
+    <text x="10" y="158" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:15</tspan>  <tspan fill="#f2495c">[ERROR]</tspan>  <tspan fill="#5794f2">postgres       </tspan><tspan fill="#d1d5db">slow query &gt;1s detected · table=deployments</tspan></text>
+    <text x="10" y="182" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:17</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">kaniko         </tspan><tspan fill="#d1d5db">pushed to ghcr.io/lakshya/forge:latest ✓</tspan></text>
+    <text x="10" y="206" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:19</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">cert-manager   </tspan><tspan fill="#d1d5db">TLS cert renewed · valid for 90d</tspan></text>
+    <text x="10" y="230" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:21</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">forge-api      </tspan><tspan fill="#d1d5db">memory pressure · GC triggered · heap freed 64MB</tspan></text>
+    <text x="10" y="254" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:24</tspan>  <tspan fill="#b877d9">[DEBUG]</tspan>  <tspan fill="#5794f2">kube-api       </tspan><tspan fill="#d1d5db">watch event NODE_READY · node=worker-3</tspan></text>
+    <text x="10" y="278" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:26</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">loki           </tspan><tspan fill="#d1d5db">chunk flushed · 2.3MB compressed · ingester=0</tspan></text>
+    <!-- repeat first 6 for seamless loop -->
+    <text x="10" y="302" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:01</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">forge-api      </tspan><tspan fill="#d1d5db">reconcile loop complete · all resources stable</tspan></text>
+    <text x="10" y="326" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:03</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">kaniko         </tspan><tspan fill="#d1d5db">image build started · ref=sha:a1b2c3d4</tspan></text>
+    <text x="10" y="350" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:05</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">nginx-ingress  </tspan><tspan fill="#d1d5db">upstream latency spike · 420ms p99</tspan></text>
+    <text x="10" y="374" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:08</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">kube-api       </tspan><tspan fill="#d1d5db">pod lakshya-worker-7d9f scaled up · node=worker-2</tspan></text>
+    <text x="10" y="398" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:11</tspan>  <tspan fill="#b877d9">[DEBUG]</tspan>  <tspan fill="#5794f2">promtail       </tspan><tspan fill="#d1d5db">scraping /metrics · 47 series collected</tspan></text>
+    <text x="10" y="422" fill="#444d56" font-size="10"><tspan fill="#444d56">10:24:13</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">forge-api      </tspan><tspan fill="#d1d5db">deploy accepted · namespace=production env=prod</tspan></text>
+  </g>
+</g>
+
+<!-- footer bar -->
+<rect x="0" y="458" width="900" height="22" fill="#1c2333" rx="0"/>
+<rect x="0" y="458" width="900" height="5" fill="#1c2333"/>
+<rect x="0" y="458" width="900" height="1" fill="#21262d"/>
+<text x="16" y="474" fill="#444d56" font-size="9">datasource: prometheus · loki · kubernetes-api</text>
+<text x="450" y="474" fill="#73bf69" font-size="9" font-weight="700" text-anchor="middle">@lakshya-chauhan · distributed systems</text>
+<text x="884" y="474" fill="#444d56" font-size="9" text-anchor="end">range: 5m · refresh: 30s</text>
+</svg>
