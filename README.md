@@ -28,7 +28,7 @@
 ---
 
 <p align="center">
-  <img src="" width="100%" alt="Live System Stats"/>
+  <img src="grafana-readme-banner(2).svg" width="100%" alt="Live System Stats"/>
 </p>
 
 ---
