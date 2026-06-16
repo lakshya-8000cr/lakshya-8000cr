@@ -40,3 +40,7 @@ I am a student and a **[Software Developer](your-linkedin-or-portfolio-link)**. 
 
 ### Current Architecture Stack: Distributed Orchestration , Declarative IaC , and Autonomous Core Pipelines .
 System Interconnects: ∘ [LinkedIn](https://in.linkedin.com/in/lakshya-chauhan-297715331) ∘ [Email](mailto:lakshyachauhan147@gmail.com) │ 
+
+<div align="center">
+  <img src="grafana-readme-banner.svg" width="100%" alt="Live System Stats"/>
+</div>
