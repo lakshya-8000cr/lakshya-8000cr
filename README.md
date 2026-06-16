@@ -33,7 +33,7 @@
 </p>
 
 
-## Hey there! I'm Lakshya ( monitoring all of u ) <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEEdtEaJY8odpldZ0obmErOy_cypU0DtSZRF2oy8D_mv0OuUt0" width="35" align="center" style="border-radius: 50%;" />
+## Hey there! I'm Lakshya <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEEdtEaJY8odpldZ0obmErOy_cypU0DtSZRF2oy8D_mv0OuUt0" width="35" align="center" style="border-radius: 50%;" />
 <br />
 
 I am a student and a **[Software Developer](your-linkedin-or-portfolio-link)**. Distributed Systems excites me , Full-Stack Development, Cloud Systems, and DevOps.
