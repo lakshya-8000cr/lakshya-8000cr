@@ -26,39 +26,39 @@
 <rect x="762" y="8" width="56" height="18" fill="#0d2b0d" rx="4" stroke="#73bf69" stroke-width="0.8"/>
 <circle cx="773" cy="17" r="3" fill="#73bf69" class="blink"/>
 <text x="780" y="21" fill="#73bf69" font-size="9" font-weight="700">LIVE</text>
-<text x="826" y="23" fill="#444d56" font-size="10">05:24:40</text>
+<text x="826" y="23" fill="#444d56" font-size="10">05:25:05</text>
 
 <!-- ── STAT PANELS ── -->
 
 <!-- CPU -->
 <rect x="12" y="46" width="168" height="92" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
 <text x="22" y="62" fill="#444d56" font-size="9" letter-spacing=".5">CPU USAGE</text>
-<text x="22" y="90" fill="#73bf69" font-size="30" font-weight="700">19.7%</text>
+<text x="22" y="90" fill="#73bf69" font-size="30" font-weight="700">35.0%</text>
 <text x="22" y="104" fill="#444d56" font-size="9">live · laptop</text>
-<polyline points="22.0,112.0 32.7,110.7 43.4,112.8 54.1,117.3 64.9,122.3 75.6,125.6 86.3,125.7 97.0,122.7 107.7,117.7 118.4,113.1 129.1,110.8 139.9,111.8 150.6,115.7 161.3,120.8 172.0,124.8" fill="none" stroke="#73bf69" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="22.0,108.8 32.7,111.3 43.4,116.0 54.1,120.9 64.9,123.8 75.6,123.5 86.3,120.0 97.0,115.0 107.7,110.6 118.4,108.7 129.1,110.1 139.9,114.3 150.6,119.4 161.3,123.2 172.0,124.0" fill="none" stroke="#73bf69" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="172" cy="117" r="3" fill="#73bf69" class="pulse"/>
 
 <!-- MEM -->
 <rect x="188" y="46" width="168" height="92" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
 <text x="198" y="62" fill="#444d56" font-size="9" letter-spacing=".5">MEMORY</text>
-<text x="198" y="90" fill="#ff9830" font-size="30" font-weight="700">78.0%</text>
-<text x="198" y="104" fill="#444d56" font-size="9">12.36 / 15.69 GB</text>
-<polyline points="198.0,116.0 208.7,118.3 219.4,117.3 230.1,113.4 240.9,108.4 251.6,104.3 262.3,103.0 273.0,105.1 283.7,109.6 294.4,114.6 305.1,117.9 315.9,118.0 326.6,115.0 337.3,110.0 348.0,105.4" fill="none" stroke="#ff9830" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="198" y="90" fill="#ff9830" font-size="30" font-weight="700">77.0%</text>
+<text x="198" y="104" fill="#444d56" font-size="9">12.13 / 15.69 GB</text>
+<polyline points="198.0,115.8 208.7,118.4 219.4,117.7 230.1,113.9 240.9,108.9 251.6,104.7 262.3,103.1 273.0,105.0 283.7,109.4 294.4,114.4 305.1,117.9 315.9,118.3 326.6,115.4 337.3,110.6 348.0,105.8" fill="none" stroke="#ff9830" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="348" cy="117" r="3" fill="#ff9830" class="pulse"/>
 
 <!-- DISK -->
 <rect x="364" y="46" width="168" height="92" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
 <text x="374" y="62" fill="#444d56" font-size="9" letter-spacing=".5">DISK</text>
-<text x="374" y="90" fill="#f2495c" font-size="30" font-weight="700">96.2%</text>
-<text x="374" y="104" fill="#444d56" font-size="9">341.4 / 355.0 GB</text>
+<text x="374" y="90" fill="#f2495c" font-size="30" font-weight="700">96.3%</text>
+<text x="374" y="104" fill="#444d56" font-size="9">341.9 / 355.0 GB</text>
 <polyline points="374.0,96.5 384.7,92.3 395.4,87.2 406.1,83.5 416.9,82.7 427.6,85.3 438.3,90.0 449.0,94.9 459.7,97.7 470.4,97.4 481.1,93.9 491.9,88.9 502.6,84.5 513.3,82.6 524.0,84.1" fill="none" stroke="#f2495c" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="524" cy="117" r="3" fill="#f2495c" class="pulse"/>
 
 <!-- PODS placeholder -->
 <rect x="540" y="46" width="130" height="92" fill="#161b22" rx="5" stroke="#21262d" stroke-width="0.8"/>
 <text x="550" y="62" fill="#444d56" font-size="9" letter-spacing=".5">NET RECV</text>
-<text x="550" y="90" fill="#5794f2" font-size="24" font-weight="700">2325.9MB</text>
-<text x="550" y="104" fill="#444d56" font-size="9">sent: 364.6 MB</text>
+<text x="550" y="90" fill="#5794f2" font-size="24" font-weight="700">2326.2MB</text>
+<text x="550" y="104" fill="#444d56" font-size="9">sent: 364.8 MB</text>
 <circle cx="554" cy="122" r="4" fill="#5794f2" class="pulse"/>
 <circle cx="568" cy="122" r="4" fill="#5794f2" opacity=".7"/>
 <circle cx="582" cy="122" r="4" fill="#5794f2" opacity=".5"/>
@@ -77,11 +77,11 @@
 
 <!-- legend -->
 <rect x="22"  y="174" width="8" height="8" fill="#73bf69" rx="1"/>
-<text x="34"  y="182" fill="#6b7280" font-size="8">cpu_usage_pct (19.7%)</text>
+<text x="34"  y="182" fill="#6b7280" font-size="8">cpu_usage_pct (35.0%)</text>
 <rect x="180" y="174" width="8" height="8" fill="#ff9830" rx="1"/>
-<text x="192" y="182" fill="#6b7280" font-size="8">mem_usage_pct (78.0%)</text>
+<text x="192" y="182" fill="#6b7280" font-size="8">mem_usage_pct (77.0%)</text>
 <rect x="340" y="174" width="8" height="8" fill="#5794f2" rx="1"/>
-<text x="352" y="182" fill="#6b7280" font-size="8">disk_usage_pct (96.2%)</text>
+<text x="352" y="182" fill="#6b7280" font-size="8">disk_usage_pct (96.3%)</text>
 
 <!-- grid -->
 <line x1="22" y1="190" x2="880" y2="190" stroke="#21262d" stroke-width=".5"/>
@@ -96,15 +96,15 @@
 <text x="16" y="274" fill="#444d56" font-size="7" text-anchor="end">0</text>
 
 <!-- cpu line (real value anchored at right) -->
-<polyline points="22,260.0 110,257.3 200,250.1 290,249.0 380,255.6 470,260.2 560,256.1 650,249.2 740,249.7 830,256.8 880,260.1"
+<polyline points="22,246.3 110,239.2 200,236.1 290,241.7 380,247.7 470,245.3 560,238.1 650,236.6 740,243.0 830,248.0 880,244.2"
   fill="none" stroke="#73bf69" stroke-width="1.8" stroke-linejoin="round" opacity=".9"/>
 
 <!-- mem line -->
-<polyline points="22,202.3 110,208.9 200,213.6 290,209.5 380,202.6 470,203.0 560,210.1 650,213.5 740,208.2 830,202.0 880,204.0"
+<polyline points="22,202.9 110,209.3 200,214.4 290,210.7 380,203.7 470,203.6 560,210.6 650,214.4 740,209.4 830,203.0 880,204.5"
   fill="none" stroke="#ff9830" stroke-width="1.8" stroke-linejoin="round" opacity=".9"/>
 
 <!-- disk line -->
-<polyline points="22,193.8 110,199.0 200,195.4 290,192.0 380,192.0 470,195.1 560,199.0 650,194.2 740,192.0 830,192.0 880,196.2"
+<polyline points="22,193.8 110,198.9 200,195.3 290,192.0 380,192.0 470,195.0 560,198.9 650,194.1 740,192.0 830,192.0 880,196.2"
   fill="none" stroke="#5794f2" stroke-width="1.8" stroke-linejoin="round" opacity=".9"/>
 
 <!-- scanline -->
@@ -124,16 +124,16 @@
 
 <g clip-path="url(#logClip)" transform="translate(12,336)">
 <g class="scroll-logs">
-<text x="10" y="16"  font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">system-monitor  </tspan><tspan fill="#d1d5db">stats collected · cpu=19.7% mem=78.0% disk=96.2%</tspan></text>
-<text x="10" y="40"  font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">cpu-tracker     </tspan><tspan fill="#d1d5db">usage at 19.7% · threshold 80%</tspan></text>
-<text x="10" y="64"  font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">mem-watcher     </tspan><tspan fill="#d1d5db">heap: 12.36GB used of 15.69GB total</tspan></text>
-<text x="10" y="88"  font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#b877d9">[DEBUG]</tspan>  <tspan fill="#5794f2">net-monitor     </tspan><tspan fill="#d1d5db">recv=2325.9MB sent=364.6MB · session total</tspan></text>
-<text x="10" y="112" font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">disk-agent      </tspan><tspan fill="#d1d5db">13.5GB free · 96.2% used · path=/</tspan></text>
-<text x="10" y="136" font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#73bf69">[INFO ]</tspan>  <tspan fill="#5794f2">uptime-beacon   </tspan><tspan fill="#d1d5db">system up 101.6 hours · all vitals nominal</tspan></text>
-<text x="10" y="160" font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">github-pusher   </tspan><tspan fill="#d1d5db">svg regenerated → pushed to github.com/lakshya-8000cr/lakshya-8000cr</tspan></text>
+<text x="10" y="16"  font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">system-monitor  </tspan><tspan fill="#d1d5db">stats collected · cpu=35.0% mem=77.0% disk=96.3%</tspan></text>
+<text x="10" y="40"  font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">cpu-tracker     </tspan><tspan fill="#d1d5db">usage at 35.0% · threshold 80%</tspan></text>
+<text x="10" y="64"  font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">mem-watcher     </tspan><tspan fill="#d1d5db">heap: 12.13GB used of 15.69GB total</tspan></text>
+<text x="10" y="88"  font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#b877d9">[DEBUG]</tspan>  <tspan fill="#5794f2">net-monitor     </tspan><tspan fill="#d1d5db">recv=2326.2MB sent=364.8MB · session total</tspan></text>
+<text x="10" y="112" font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">disk-agent      </tspan><tspan fill="#d1d5db">13.1GB free · 96.3% used · path=/</tspan></text>
+<text x="10" y="136" font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#73bf69">[INFO ]</tspan>  <tspan fill="#5794f2">uptime-beacon   </tspan><tspan fill="#d1d5db">system up 101.6 hours · all vitals nominal</tspan></text>
+<text x="10" y="160" font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">github-pusher   </tspan><tspan fill="#d1d5db">svg regenerated → pushed to github.com/lakshya-8000cr/lakshya-8000cr</tspan></text>
 <!-- repeat first 2 for seamless -->
-<text x="10" y="184" font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">system-monitor  </tspan><tspan fill="#d1d5db">stats collected · cpu=19.7% mem=78.0% disk=96.2%</tspan></text>
-<text x="10" y="208" font-size="10"><tspan fill="#444d56">05:24:40</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">cpu-tracker     </tspan><tspan fill="#d1d5db">usage at 19.7% · threshold 80%</tspan></text>
+<text x="10" y="184" font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#5794f2">[INFO ]</tspan>  <tspan fill="#5794f2">system-monitor  </tspan><tspan fill="#d1d5db">stats collected · cpu=35.0% mem=77.0% disk=96.3%</tspan></text>
+<text x="10" y="208" font-size="10"><tspan fill="#444d56">05:25:05</tspan>  <tspan fill="#ff9830">[WARN ]</tspan>  <tspan fill="#5794f2">cpu-tracker     </tspan><tspan fill="#d1d5db">usage at 35.0% · threshold 80%</tspan></text>
 </g>
 </g>
 
@@ -142,5 +142,5 @@
 <rect x="0" y="458" width="900" height="1" fill="#21262d"/>
 <text x="16"  y="474" fill="#444d56" font-size="9">source: gopsutil · auto-push via git</text>
 <text x="450" y="474" fill="#73bf69" font-size="9" font-weight="700" text-anchor="middle">@lakshya-8000cr · distributed systems</text>
-<text x="884" y="474" fill="#444d56" font-size="9" text-anchor="end">updated: 05:24:40</text>
+<text x="884" y="474" fill="#444d56" font-size="9" text-anchor="end">updated: 05:25:05</text>
 </svg>
