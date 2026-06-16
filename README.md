@@ -5,10 +5,10 @@
 </p>
 -->
 
-<h1 align="center">Hey 👋 I'm <span style="color:#00A3FF">Lakshya Chauhan</span></h1>
+<h1 align="center">Hey  I'm <span style="color:#00A3FF">Lakshya Chauhan</span></h1>
 
 <p align="center">
-   Full-Stack Developer •  AI Builder •  Hackathon Winner <br/>
+   Full-Stack Developer • System engineering •  3x Hackathon Winner <br/>
    B.E. CSE @ Chitkara University
 </p>
 
@@ -32,3 +32,11 @@
   <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00A3FF&center=true&vCenter=true&lines=Top+30+at+Google+Hackathon;Building+AI+Products;Open+Source+Contributor">
 </p>
 
+
+## Hey there! I'm Lakshya ( monitoring all of u ) <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEEdtEaJY8odpldZ0obmErOy_cypU0DtSZRF2oy8D_mv0OuUt0" width="35" align="center" style="border-radius: 50%;" />
+<br />
+
+I am a student and a **[Software Developer](your-linkedin-or-portfolio-link)**. Distributed Systems excites me , Full-Stack Development, Cloud Systems, and DevOps.
+
+### Current Architecture Stack: Distributed Orchestration , Declarative IaC , and Autonomous Core Pipelines .
+System Interconnects: ∘ [LinkedIn](https://in.linkedin.com/in/lakshya-chauhan-297715331) ∘ [Email](mailto:lakshyachauhan147@gmail.com) │ 
