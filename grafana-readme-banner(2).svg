@@ -22,7 +22,7 @@
 <rect width="900" height="36" fill="#1c2333"/>
 <rect y="36" width="900" height="1" fill="#21262d"/>
 <text x="16" y="23" fill="#ff9830" font-size="13" font-weight="700" letter-spacing="1">⬡ GRAFANA</text>
-<text x="108" y="23" fill="#444d56" font-size="12">lakshya@MUZAN:-</text>
+<text x="108" y="23" fill="#444d56" font-size="12">lakshya@MUZAN:~$</text>
 <rect x="762" y="8" width="56" height="18" fill="#0d2b0d" rx="4" stroke="#73bf69" stroke-width="0.8"/>
 <circle cx="773" cy="17" r="3" fill="#73bf69" class="blink"/>
 <text x="780" y="21" fill="#73bf69" font-size="9" font-weight="700">LIVE</text>
