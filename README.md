@@ -27,9 +27,9 @@
 
 ---
 
-<p align="center">
+<!-- <p align="center">
   <img src="grafana-readme-banner.svg" width="100%" alt="Live System Stats"/>
-</p>
+</p> -->
 
 ---
 
